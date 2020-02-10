@@ -1,8 +1,8 @@
 import ExpenseActionTypes from './expense.types';
 
 const INITIAL_STATE = {
-    expenses: [],
-};
+    expenses: []
+}
 
 const expenseReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
