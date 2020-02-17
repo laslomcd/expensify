@@ -7,11 +7,11 @@ const store = createStore(
     composeWithDevTools()
 );
 
-store.subscribe(() => {
-    const state = store.getState();
-    const visibleExpenses = getVisbleExpenses(state.expenses.expenses, state.filters);
-    console.log(visibleExpenses)
-});
+// store.subscribe(() => {
+//     const state = store.getState();
+//     const visibleExpenses = getVisbleExpenses(state.expenses.expenses, state.filters);
+//     console.log(visibleExpenses)
+// });
 
 
 export const getVisbleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {

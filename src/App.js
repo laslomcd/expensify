@@ -30,7 +30,7 @@ class App extends React.Component {
             createdAt: 0
         }));
 
-        // store.dispatch(setTextFilter('water'))
+        store.dispatch(setTextFilter('gas'))
 
         console.log(store.getState())
         return (
