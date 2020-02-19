@@ -23,7 +23,6 @@ class ExpenseForm extends React.Component {
         if (amount.match(/^\d*(\.\d{0,2})?$/)) {
             this.setState({ amount: amount })
         }
-
     }
 
     render() {
