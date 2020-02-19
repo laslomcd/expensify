@@ -5,7 +5,7 @@ export const setTextFilter = (filterText) => ({
     payload: filterText
 });
 
-export const setSortByDate = () => ({
+export const sortByDate = () => ({
     type: FilterActionTypes.SORT_BY_DATE,
 });
 

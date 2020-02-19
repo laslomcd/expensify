@@ -18,7 +18,7 @@ class App extends React.Component {
             id: uuid(),
             description: 'Water Bill',
             note: '',
-            amount: 0,
+            amount: 4500,
             createdAt: 0
         }));
 
@@ -27,10 +27,18 @@ class App extends React.Component {
             description: 'Gas Bill',
             note: '',
             amount: 0,
+            createdAt: 1000
+        }));
+
+        store.dispatch(addExpense({
+            id: uuid(),
+            description: 'Rent',
+            note: '',
+            amount: 109500,
             createdAt: 0
         }));
 
-        store.dispatch(setTextFilter('gas'))
+        // store.dispatch(setTextFilter('gas'))
 
         console.log(store.getState())
         return (
