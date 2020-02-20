@@ -14,7 +14,7 @@ const expenseReducer = (state = INITIAL_STATE, action) => {
         case ExpenseActionTypes.EDIT_EXPENSE:
             return {
                 ...state,
-                expenses: state.expenses.map(expense => expense.id === action.payload.id ? { ...expense, amount: action.payload.amount } : expense)
+                expenses: state.expenses.map(expense => expense.id === action.payload.id ? action.payload : expense)
             }
         case ExpenseActionTypes.REMOVE_EXPENSE:
             return {

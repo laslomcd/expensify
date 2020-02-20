@@ -6,12 +6,12 @@ export const addExpense = (expense) => ({
     payload: expense
 });
 
-export const removeExpense = (expenseId) => ({
+export const removeExpense = (expense) => ({
     type: ExpenseActionTypes.REMOVE_EXPENSE,
-    payload: expenseId
+    payload: expense
 });
 
-export const editExpense = (expenseId) => ({
+export const editExpense = (expense) => ({
     type: ExpenseActionTypes.EDIT_EXPENSE,
-    payload: expenseId
+    payload: expense
 });

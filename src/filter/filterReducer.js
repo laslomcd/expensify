@@ -1,11 +1,11 @@
 import FilterActionTypes from './filter.types';
-
+import moment from 'moment';
 
 const INTIIAL_STATE = {
     text: '',
     sortBy: 'date',
-    startDate: undefined,
-    endDate: undefined
+    startDate: moment().startOf('month'),
+    endDate: moment().endOf('month')
 };
 
 const filterReducer = (state = INTIIAL_STATE, action) => {
